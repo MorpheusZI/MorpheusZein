@@ -8,7 +8,6 @@ hamburg.addEventListener("click", () => {
     nav.classList.toggle("open");
     acc.classList.toggle("acpen");
   } else {
-    acc.classList.remove("acpen");
     nav.classList.remove("open");
     hamburg.setAttribute("aria-expanded", "false");
   }

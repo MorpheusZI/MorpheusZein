@@ -49,35 +49,34 @@ body {
   color: white;
   background-color: black;
 }
-.nav {
+
+.nav{
   display: flex;
-  align-items: center;
-  height: 100%;
-  padding-block: 20px;
   justify-content: center;
-}
-
-.sidebar > a {
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-.sidebar {
-  width: 100%;
-  transition: 2s;
-  height: 100%;
-  font-family: var(--prim-font);
-  transform: translateX(-1500px);
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  flex-direction: row;
+}
+.sidebar > a {
+  font-size: 2vw;
+}
+.sidebar > a:hover{
+  color: crimson;
+  transition: 1s;
 }
 
-.open {
-  margin-top: 1%;  
-  transform: translateX(0px);
+.sidebar{
+  width: 90%;
+  transition: 2s;
+  transform: translateX(-100vw);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.7vw;
 }
+
+.open{
+  transform: translateX(0);
+}
+
 .heru {
   color: crimson;
 }
@@ -108,6 +107,9 @@ body {
   color: rgb(255, 233, 233);
   font-family: var(--prim-font);
 }
+.iscoimg{
+  display: none;
+}
 .emdot {
   color: crimson;
   font-size: 55px;
@@ -127,7 +129,8 @@ body {
     font-size: 20px;
   }
 }
-@media only screen and (max-width: 800px) {
+.isco > a{
+  font-size: 2vw;
 }
 /* button styling */
 button {
@@ -138,6 +141,7 @@ button {
   position: absolute;
   top: 1%;
   left: 1%;
+  z-index: 1;
   border: none;
   padding-inline: 28px;
 }
@@ -191,10 +195,49 @@ footer {
   body {
     overflow-x: hidden !important;
   }
-
-  .sidebar > a {
-    margin-top: 2%;
-    font-size: 4vw;
+  .nav{
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+  
+  .isco > a{ 
+    height: 100%;
+    font-size: 6vw;
+  }
+  button{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 2 !important;
+  }
+  .open{
+    position: fixed;
+  }
+  .iscoimg{
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  .isco{
+    gap: 1rem;
+    display: flex;
+  }
+  .sidebar{
+    flex-direction: column;
+    width: 50%;
+    margin-top: -5%;
+    background-color: crimson;
+    padding-top: 6rem;
+    top: 1vh;
+    gap: 2rem;
+    padding-inline-start: 1rem;
+    justify-content:start;
+    align-items: start;
+    gap: -25rem;
+    z-index: 1 !important;
+    position:fixed;
+    border-radius: 0px 0px 30px 0px;
+    height: 50vh;
   }
   svg {
     width: 20px;
@@ -209,18 +252,12 @@ footer {
   .Landingpage {
     display: flex;
     flex-direction: column-reverse;
-  }
-  button {
-    padding-block: 3vh;
-    padding-inline: 4vw;
-  }
-  .open {
-    margin-top: -5px;
-  }
+  } 
   .gimp {
     width: 100%;
   }
   .Frontend {
+    margin-top: 100px;
     padding: 15px !important;
   }
   .Frow1 {
@@ -261,7 +298,7 @@ footer {
     font-size: 1.5rem !important;
   }
   .contact{
-    margin-top: 2rem !important;
+    margin-top: 5em !important;
   }
   
   .cinfo{
@@ -377,7 +414,7 @@ hr {
 }
 .icons {
   position: static;
-  z-index: 1;
+  z-index: 0;
   display: flex;
   margin-bottom: 20px;
   gap: 20px;

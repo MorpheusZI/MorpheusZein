@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
-  --prim-font: "Raleway", sans-serif;
-  --sec-font: "Inter", sans-serif;
+  --prim-font: "Montserrat", sans-serif;
+  --sec-font: "Raleway", sans-serif;
 }
 
 *,
@@ -119,6 +120,7 @@ body {
   color: white;
   gap: 2rem;
   font-size: 30px;
+  font-family: var(--sec-font);
   margin-top: 3rem;
   margin-bottom: 6rem;
   justify-content: center;
@@ -130,7 +132,7 @@ body {
   }
 }
 .isco > a{
-  font-size: 2vw;
+  font-size: 3vw;
 }
 /* button styling */
 button {
@@ -199,7 +201,26 @@ footer {
     justify-content: start;
     margin-bottom: 20px;
   }
-  
+  .aosthings{
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 2s;
+  }
+  .showups{
+    transition: all 1s;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .aosthing{
+    opacity: 0;
+    transform: scale(0);
+    transition: all 2s;
+  }
+  .showup{
+    transition: all 1s;
+    opacity: 1;
+    transform: scale(1);
+  }
   .isco > a{ 
     height: 100%;
     font-size: 6vw;
@@ -394,7 +415,7 @@ hr {
 .gimp {
   margin-bottom: 5px;
   width: 100%;
-  border-radius: 23px;
+  border-radius: 3px;
   box-shadow: 0px 2px 5px 0px rgba(145, 145, 145, 0.5);
   height: 220px;
 }
@@ -421,13 +442,13 @@ hr {
 }
 .fucon2 {
   border-radius: 10px;
-  background-color: wheat;
+  background-color: crimson;
   width: 3vw;
   padding: 5px;
 }
 .fucons {
   border-radius: 10px;
-  background-color: wheat;
+  background-color: crimson;
   padding: 5px;
   width: 3vw;
 }

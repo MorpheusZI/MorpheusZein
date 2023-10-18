@@ -328,6 +328,16 @@ footer {
     width: 100% !important;
     /* flex-basis: 100%; */
   }
+  .Aimg{
+    margin-bottom: 2rem;
+    width: 90vw !important;
+  }
+  .Arow{
+    justify-content: center !important;
+    align-items: center !important;
+    padding-inline: 20px;
+    flex-direction: column;
+  }
   .ficons{
     width: 50px;
   }
@@ -503,4 +513,25 @@ hr {
 .poj {
   color: crimson;
   text-decoration: underline;
+}
+.Aimg{
+  width: 500px;
+}
+.Aitem{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.achiv{
+  margin-top: 50px ;
+  padding-bottom: 100px;
+  text-align: center;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+.Arow{
+ display: flex;
+ align-items: center;
+ justify-content: space-around; 
 }

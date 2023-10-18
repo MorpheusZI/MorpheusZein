@@ -230,6 +230,16 @@ footer {
 /* button styling */
 
 @media only screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: crimson;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
   body {
     overflow-x: hidden !important;
   }
@@ -515,7 +525,7 @@ hr {
   text-decoration: underline;
 }
 .Aimg{
-  width: 500px;
+  width: 400px;
 }
 .Aitem{
   display: flex;

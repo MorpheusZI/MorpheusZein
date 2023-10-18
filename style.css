@@ -137,15 +137,51 @@ body {
 /* button styling */
 button {
   cursor: pointer;
-  padding-block: 25px;
-  background-color: transparent;
+  padding-bottom: -5px;
+  margin-block: 20px;
+  padding-block: 5px;
   transition: 1s;
   position: absolute;
   top: 1%;
   left: 1%;
   z-index: 1;
+  transition: all 2s;
+  background-color: crimson;
   border: none;
-  padding-inline: 28px;
+  animation: pulsebg 2s ;
+  animation-iteration-count: 1;
+  padding-inline: 8px;
+  border-radius: 5px;
+  margin-inline: 20px;
+}
+@keyframes pulseabg {
+  from {
+    transition: all 2s;
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes pulsebg {
+  from {
+    transition: all 2s;
+    border-radius: 20px;
+    transform: rotate(360deg);
+  }
+  to {
+    border-radius: 5px;
+    transform: rotate(0deg);
+  }
+}
+.burga{
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+.burga[aria-expanded="true"]{
+  animation: pulseabg 2s   infinite  ;
+  background-color: crimson;
+  animation: none;
 }
 .burga rect {
   transition: 1s;
@@ -236,10 +272,11 @@ footer {
   }
   .iscoimg{
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
   .isco{
+    align-items: center;
     gap: 1rem;
     display: flex;
   }
@@ -278,7 +315,7 @@ footer {
     width: 100%;
   }
   .Frontend {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 15px !important;
   }
   .Frow1 {
@@ -333,15 +370,23 @@ footer {
 /* !!! LANDING PAGE STYLING END !!! */
 
 /* !!! SKILLZ STYLING START !!! */
-.lang {
-  margin-bottom: 2rem;
+.langz{
+  text-align: center;
   font-size: 6vh;
+}
+.azs{
+  background-color: crimson;
+  color: crimson;
+}
+.lang {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 4vh;
 }
 .lans {
   color: crimson;
 }
 .Frontend {
-  margin-bottom: 5rem;
   font-family: var(--prim-font);
   padding: 2rem;
 }
